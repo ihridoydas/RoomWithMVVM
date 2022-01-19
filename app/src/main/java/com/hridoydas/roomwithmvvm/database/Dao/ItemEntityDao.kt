@@ -11,12 +11,12 @@ interface ItemEntityDao {
 
 
     @Query("SELECT * FROM item_entity")
-    fun getAllItemEntities(): List<ItemEntity>
+    suspend fun getAllItemEntities(): List<ItemEntity>
 
     @Insert
-    fun insertAll(vararg users: ItemEntity)
+    fun insert(itemEntity: ItemEntity)
 
     @Delete
-    fun delete(user: ItemEntity)
+    fun delete(itemEntity: ItemEntity)
 
 }
