@@ -1,4 +1,4 @@
-package com.hridoydas.roomwithmvvm.Model
+package com.hridoydas.roomwithmvvm.database.Entity
 
 import androidx.room.Entity
 
